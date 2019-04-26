@@ -12,9 +12,12 @@
 		5F41DDC22272F04D003EC398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F41DDC02272F04D003EC398 /* Main.storyboard */; };
 		5F41DDC42272F04E003EC398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F41DDC32272F04E003EC398 /* Assets.xcassets */; };
 		5F41DDC72272F04E003EC398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F41DDC52272F04E003EC398 /* LaunchScreen.storyboard */; };
+		A1E1F313D7AC0C4B365B4817 /* Pods_rxswift_textfield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164E34F6C998AF3B1A811BE0 /* Pods_rxswift_textfield.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		164E34F6C998AF3B1A811BE0 /* Pods_rxswift_textfield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rxswift_textfield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E63C344EC931C881B52CA2B /* Pods-rxswift_textfield.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxswift_textfield.release.xcconfig"; path = "Target Support Files/Pods-rxswift_textfield/Pods-rxswift_textfield.release.xcconfig"; sourceTree = "<group>"; };
 		5F41DDB92272F04C003EC398 /* rxswift_textfield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rxswift_textfield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F41DDBC2272F04C003EC398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F41DDBE2272F04C003EC398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		5F41DDC32272F04E003EC398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F41DDC62272F04E003EC398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F41DDC82272F04E003EC398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		892826FA52BF8168ED00A032 /* Pods-rxswift_textfield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxswift_textfield.debug.xcconfig"; path = "Target Support Files/Pods-rxswift_textfield/Pods-rxswift_textfield.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E1F313D7AC0C4B365B4817 /* Pods_rxswift_textfield.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21DDE14767AF1584FB16690C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				892826FA52BF8168ED00A032 /* Pods-rxswift_textfield.debug.xcconfig */,
+				4E63C344EC931C881B52CA2B /* Pods-rxswift_textfield.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5F41DDB02272F04C003EC398 = {
 			isa = PBXGroup;
 			children = (
 				5F41DDBB2272F04C003EC398 /* rxswift_textfield */,
 				5F41DDBA2272F04C003EC398 /* Products */,
+				21DDE14767AF1584FB16690C /* Pods */,
+				F16E6367B7ACFD56E852382D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = rxswift_textfield;
 			sourceTree = "<group>";
 		};
+		F16E6367B7ACFD56E852382D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				164E34F6C998AF3B1A811BE0 /* Pods_rxswift_textfield.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F41DDCB2272F04E003EC398 /* Build configuration list for PBXNativeTarget "rxswift_textfield" */;
 			buildPhases = (
+				98C6CDDE6B6E51FEE2017398 /* [CP] Check Pods Manifest.lock */,
 				5F41DDB52272F04C003EC398 /* Sources */,
 				5F41DDB62272F04C003EC398 /* Frameworks */,
 				5F41DDB72272F04C003EC398 /* Resources */,
+				FD0D2468A3C4208630357AFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98C6CDDE6B6E51FEE2017398 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rxswift_textfield-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0D2468A3C4208630357AFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rxswift_textfield/Pods-rxswift_textfield-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rxswift_textfield/Pods-rxswift_textfield-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F41DDB52272F04C003EC398 /* Sources */ = {
@@ -280,6 +356,7 @@
 		};
 		5F41DDCC2272F04E003EC398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892826FA52BF8168ED00A032 /* Pods-rxswift_textfield.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		5F41DDCD2272F04E003EC398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E63C344EC931C881B52CA2B /* Pods-rxswift_textfield.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
