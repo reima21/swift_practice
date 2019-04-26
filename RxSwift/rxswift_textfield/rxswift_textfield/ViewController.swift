@@ -15,19 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     
-    let disposeBag = DisposeBag()
+    let disposeBag = DisposeBag() //観測状態からの解放を行う際に使う
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textField.rx.text.orEmpty
-            .map{$0.description}
-            .bind(to: label.rx.text)
-            .disposed(by: disposeBag)
+        textField.rx.text.orEmpty //受け取る値をStringに限定（空文字やnilはオブザーブしない）
+            .map{$0.description} //受け取った値それぞれをString?からStringに変換する
+            .bind(to: label.rx.text) //受け取った値を対象のUIViewのプロパティに反映させる
+            .disposed(by: disposeBag) //観測対象から除外する
 
     }
-
 
 }
 
