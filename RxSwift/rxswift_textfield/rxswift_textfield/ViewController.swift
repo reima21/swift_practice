@@ -24,6 +24,14 @@ class ViewController: UIViewController {
             .map{$0.description} //受け取った値それぞれをString?からStringに変換する
             .bind(to: label.rx.text) //受け取った値を対象のUIViewのプロパティに反映させる
             .disposed(by: disposeBag) //観測対象から除外する
+        
+        
+        let helloObservable : Observable<String> = Observable.from(["H","e","l","l","o"])
+        helloObservable.subscribe(
+            onNext: { value in print(value) },
+            onError: { error in print(error.localizedDescription) },
+            onCompleted: { print("completed") }
+        ).disposed(by: disposeBag)
 
     }
 
